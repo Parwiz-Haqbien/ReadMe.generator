@@ -25,8 +25,21 @@ inquirer
         message: 'please write a short description of your project',
     },
     {
-        type: 'input',
+        type: 'checkbox',
         name: 'License',
         message: 'What kind of license should your project have?',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+    },
+    {
+        type: 'input',
+        name: 'dependencies',
+        message: 'What command should be run to install dependencies?',
+        default: ['npm i']
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'What command should be run to test?',
+        default: ['npm test']
     },
 ])
