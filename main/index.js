@@ -95,9 +95,9 @@ inquirer
     },
 ])
 .then((answers) => {
-    const readmeContent = generateREADME `${answers}.json`; 
+    const readmeContent = generateREADME(answers); 
 
-    fs.writeFile('README.md', readmeContent, JSON.stringify(answers,null,'\t'), (err) =>
+    fs.writeFile('README.md', readmeContent, (err) =>
     err ? console.log(err) : console.log('Generating README...!')
     ); 
 });
