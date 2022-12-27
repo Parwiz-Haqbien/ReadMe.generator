@@ -1,47 +1,7 @@
+// TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs')
-
-const generateREADME = ({name, project, description, license, dependencies, test, repo, contributing}) =>
-`# My Project
-    ${name}
-
-# Description
-    ${description}  
-    
-
-# Table of Contents
-    * ${dependencies}    
-    * ${description}   
-    * ${license}   
-    * ${contributing}   
-    * ${test}   
-    * ${repo}  
-
-# Installation
-To install necessary dependencies, run the following comman
-    ${dependencies}
-    
-    
-# Usage
-${description}
-
-
-# License
-This project is licensed under the ${license}
-
-
-# Contributing 
-${contributing}  
-
-
-# Tests 
-To run test, run the follwing command
-${test}
-
-# Questions
-if you have any questions about the repo, open an issue or contact me directly at email@gmail.com. You can fine more of my work at ${project} `
-    
-
+const generateMarkdown = require('./utils/generateMarkup')
 
 inquirer
 .prompt([
