@@ -1,7 +1,7 @@
 //Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs')
-const generateMarkdown = require('./utils/generateMarkup')
+const generateMarkdown = require('./utils/generateMarkup');
 
 //Create an array of questions for user input
 const questions =[
@@ -18,11 +18,6 @@ const questions =[
     {
         type: 'input',
         name: 'installation',
-        message: 'Write a brief description about the project?',
-    },
-    {
-        type: 'input',
-        name: 'description',
         message: 'How is your project installed?',
         default: "N/A",
     },
@@ -41,13 +36,13 @@ const questions =[
         type: 'input',
         name: 'contribution',
         message: 'How can people contribute to your project?',
-        default: 'For contribution, use Github to fork the repository to submit suggested changes or changes using feature branches'
+        default: 'For contribution, use Github to fork the repository to submit suggested changes or updates using feature branches'
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'tests',
         message: 'What command should be run to test?',
-        default: 'npm run test'
+        default: 'npm run test',
     },
     {
         type: 'input',
@@ -65,12 +60,12 @@ const questions =[
 function init() {
    // Use inquirer for question to start
     inquirer
-    .createPromptModule(questions)
+    .prompt(questions)
     // Gather the answers and send to write the file
     .then((answers) => {
-        const generateMarkdown = generateREADME(answers); 
+        const generateContent = generateMarkdown(answers); 
     
-        fs.writeFile('README.md', generateMarkdown, (err) =>
+        fs.writeFile('README.md', generateContent, (err) =>
         err ? console.log(err) : console.log('Generating README...!')
         ); 
     });

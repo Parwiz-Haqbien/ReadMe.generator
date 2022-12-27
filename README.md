@@ -1,1 +1,21 @@
-For this project I pulled the thr inquirer using require and wiht the help of fs I am able to generate a readme genorator. assinging the words with the sentecnes it will know excatly where each answer should be placed and with the code it was simple just given it a name that relates to the question and wrting the message that will be displayed in the terminal with, with the multiple choice questins you have to use checkbox as the type and inside choices the choice you want the user to see will be displayed, same goes for defualt. . Then we grab answers and asign the readmeContent to generateReadme and with the help fs.writeFile we generate a readMe file
+# README.md Generator
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+
+## Description
+I have used this repository to re imagine the starter code and create an application that generates a README.md file through user input."
+
+## Installation
+N/A
+
+## Usage
+To use the README generator, run node.js and follow the prompts to input the necessary information for the README.md file.
+
+## Contribution
+Made by Parwiz Haqbien
+
+video url(https://drive.google.com/file/d/120RlWI85qibL4LSovhKwFLAcDtkSiaMR/view)
