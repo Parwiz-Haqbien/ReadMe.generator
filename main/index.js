@@ -3,22 +3,22 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkup')
 
-inquirer
-.prompt([
+// TODO: Create an array of questions for user input
+const questions =[
     {
         type: 'input',
-        name: 'name',
-        message: 'What is your Github username?',
+        name: 'title',
+        message: 'What is the name of your projects?',
     },
     {
         type: 'input',
-        name: 'email',
+        name: 'description',
         message: 'What is your email adress?',
     },
     {
         type: 'input',
         name: 'project',
-        message: 'What is your projects name?',
+        message: 'Write a brief description about the project?',
     },
     {
         type: 'input',
@@ -53,7 +53,7 @@ inquirer
         name: 'contributing',
         message: 'What does the user need to know about contributing to the repo?',
     },
-])
+]
 .then((answers) => {
     const readmeContent = generateREADME(answers); 
 
