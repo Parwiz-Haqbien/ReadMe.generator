@@ -7,7 +7,7 @@
 - [Contribution](#contribution)
 
 ## Description
-I have used this repository to re imagine the starter code and create an application that generates a README.md file through user input."
+I have used this repository to re imagine the starter code and create an application that generates a README.md file through user input.
 
 ## Installation
 N/A
