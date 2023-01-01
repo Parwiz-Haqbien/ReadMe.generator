@@ -14,6 +14,7 @@ N/A
 
 ## Usage
 To use the README generator, run node.js and follow the prompts to input the necessary information for the README.md file.
+![App Screenshot](https://github.com/Parwiz-Haqbien/ReadMe.generator/blob/main/main/img/Screenshot%202022-12-27%20173542.png?raw=true)
 
 ## Contribution
 Made by Parwiz Haqbien
